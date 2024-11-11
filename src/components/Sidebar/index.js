@@ -47,7 +47,9 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <a target = "_blank" rel = "noreferrer" href = "https://leetcode.com/u/Gamestar283/">
-                        <img src = {LeetCode} alt="LeetCode SVG"/>
+                        <div class = "image-hover">
+                            <img src = {LeetCode} alt="LeetCode SVG"/>
+                        </div>
                     </a>
                 </li>
             </ul>

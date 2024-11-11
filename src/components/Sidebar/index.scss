@@ -43,6 +43,20 @@
             }
         }
     }
+    .image-hover {
+        width: 20px; /* Specify the width */
+        height: 18px; /* Specify the height */
+        background-size: cover; /* Cover the entire area of the element */
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        transition: background-image 0.5s ease-in-out; /* Smooth transition */
+    }
+    
+    .image-hover:hover {
+        background-color: #ffd700; /* Change on hover */
+    }
+
     nav { 
         display: block;
         text-align: center; 
