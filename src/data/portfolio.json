@@ -1,7 +1,22 @@
 {
     "portfolio": [
         {
-            
+            "cover": "/portfolio/StockMarketPredictor.jpg", 
+            "title": "Stock Market Predictor", 
+            "description": "Python, Sci-kit Learn, Pandas", 
+            "url": "https://github.com/ragkasi/StockPredictor"
+        },
+        {
+            "cover": "/portfolio/discord.jpg", 
+            "title": "Discord Web Scraper Bot", 
+            "description": "Python, Flask, Beautiful Soup", 
+            "url": "https://github.com/ragkasi/DiscordBot"
+        },
+        {
+            "cover": "/portfolio/calculator.png", 
+            "title": "Multipurpose Calculator", 
+            "description": "Ruby", 
+            "url": "https://github.com/ragkasi/CalculatorGUI"
         }
     ]
 }
