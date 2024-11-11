@@ -2,7 +2,7 @@
 
 Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://erikc-portfolio.vercel.app/)
 
-<img width="1160" alt="Raghav's Home Page" src="https://github.com/ragkasi/PortfolioWebsite/assets/homepage.png">
+<img width="1160" alt="Raghav's Home Page" src="https://github.com/ragkasi/PortfolioWebsite/src/assets/homepage.png">
 
 
 
