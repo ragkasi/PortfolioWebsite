@@ -14,10 +14,15 @@
             padding: 8px 10px; /* Adjust padding to match expanded width */
             img {
                 width: 70%; /* Make the logo fill the expanded width */
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
             }
             .sub-logo{
                 width: 70%;
-                padding-left: 12px;
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         a{
@@ -42,7 +47,6 @@
             
             &.sub-logo { 
                 max-width: fit-content;
-                margin-left: 4px;
                 width: 50px; 
             }
         }
