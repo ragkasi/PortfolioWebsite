@@ -29,6 +29,12 @@
             "title": "Presentation Manager", 
             "description": "Ruby/Rails", 
             "url": "https://github.com/ragkasi/PresentationSystem"
+        },
+        {
+            "cover": "/portfolio/canvas.png", 
+            "title": "Class Manager", 
+            "description": "Ruby", 
+            "url": "https://github.com/ragkasi/CanvasClassManager"
         }
     ]
 }
