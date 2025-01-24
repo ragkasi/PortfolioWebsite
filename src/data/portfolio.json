@@ -17,6 +17,18 @@
             "title": "Multipurpose Calculator", 
             "description": "Ruby", 
             "url": "https://github.com/ragkasi/CalculatorGUI"
+        },
+        {
+            "cover": "/portfolio/Spotify.png", 
+            "title": "Spotify Controller", 
+            "description": "Arduino", 
+            "url": "https://github.com/ragkasi/SpotifyRemote"
+        },
+        {
+            "cover": "/portfolio/Presentation.png", 
+            "title": "Presentation Manager", 
+            "description": "Ruby/Rails", 
+            "url": "https://github.com/ragkasi/PresentationSystem"
         }
     ]
 }
