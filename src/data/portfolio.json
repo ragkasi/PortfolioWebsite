@@ -7,6 +7,12 @@
             "url": "https://github.com/ragkasi/BreatheSafe"
         },
         {
+            "cover": "/portfolio/inboxer.jpg", 
+            "title": "Inboxer Extension", 
+            "description": "React, JavaScript, Webpack", 
+            "url": "https://github.com/ragkasi/inboxer"
+        },
+        {
             "cover": "/portfolio/StockMarketPredictor.jpg", 
             "title": "Stock Market Predictor", 
             "description": "Python, Sci-kit Learn, Pandas", 
