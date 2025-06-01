@@ -15,7 +15,7 @@ const TechList = () => {
 
   return (
     <div>
-      <h2>Frameworks & Technologies</h2>
+      <h2>Frameworks & Technologies: </h2>
       <ul>
         {techs.map((tech, index) => (
           <li key={index}>

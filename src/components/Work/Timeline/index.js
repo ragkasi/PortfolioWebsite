@@ -42,36 +42,46 @@ const Timeline = () => {
   };
 
   return (
-    <div className="timeline-container">
-      {events.map((event, index) => (
-        <div
-          className={`timeline-item ${event.expanded ? 'expanded' : ''}`}
-          key={index}
-          onClick={() => handleItemClick(index)}
-        >
-          <div className="timeline-marker"></div>
-          <div className="timeline-content">
-            <h2>{event.title}</h2>
-            {event.expanded ? (
-              <div>
-                {event.description.map((desc, descIndex) => (
-                  <p key={descIndex} dangerouslySetInnerHTML={{ __html: desc }} />
-                ))}
-              </div>
-            ) : (
-              <>
-                <div className="more">
-                  <p>Click for more</p>
+    <>
+      <div className="timeline-container">
+        {events.map((event, index) => (
+          <div
+            className={`timeline-item ${event.expanded ? 'expanded' : ''}`}
+            key={index}
+            onClick={() => handleItemClick(index)}
+          >
+            <div className="timeline-marker"></div>
+            <div className="timeline-content">
+              <h2>{event.title}</h2>
+              {event.expanded ? (
+                <div>
+                  {event.description.map((desc, descIndex) => (
+                    <p key={descIndex} dangerouslySetInnerHTML={{ __html: desc }} />
+                  ))}
                 </div>
-                <div className="date">{event.date}</div>
-                <br/>
-                <img src={event.image} alt = "coe" />
-              </>
-            )}
+              ) : (
+                <>
+                  <div className="more">
+                    <p>Click for more</p>
+                  </div>
+                  <div className="date">{event.date}</div>
+                  <br/>
+                  <img src={event.image} alt = "coe" />
+                </>
+              )}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+      {/* Hidden div for text-to-speech that includes all titles */}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        {events.map((event, index) => (
+          <div key={`tts-${index}`}>
+            <h2>{event.title}</h2>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

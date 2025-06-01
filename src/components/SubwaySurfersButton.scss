@@ -1,0 +1,63 @@
+.subway-surfers-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #ff4444;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.1);
+    background: #ff6666;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &::before {
+    content: "Try me!";
+    position: absolute;
+    right: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    animation: bounce 1s infinite;
+  }
+
+  &::after {
+    content: "→";
+    position: absolute;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 20px;
+    animation: bounce 1s infinite;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(5px);
+  }
+} 

@@ -15,7 +15,7 @@ const LanguageList = () => {
 
   return (
     <div>
-      <h2>Languages</h2>
+      <h2>Languages: </h2>
       <ul>
         {languages.map((language, index) => (
           <li key={index}>

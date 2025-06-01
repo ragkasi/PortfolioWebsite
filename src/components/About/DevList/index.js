@@ -12,7 +12,7 @@ const TechList = () => {
 
   return (
     <div>
-      <h2>Development Tools</h2>
+      <h2>Development Tools: </h2>
       <ul>
         {devs.map((dev, index) => (
           <li key={index}>
