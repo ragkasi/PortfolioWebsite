@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './index.scss';
 import COE from "../../../assets/images/osucoe.png";
 import MT from "../../../assets/images/mt.png";
+import CB from "../../../assets/images/citizens-bank-logo.png";
+import CR from "../../../assets/images/cr-logo.png";
 
 const Timeline = () => {
   const [events, setEvents] = useState([
@@ -15,10 +17,23 @@ const Timeline = () => {
         ],
       expanded: false,
       image: COE,
+      image1: null,
+    },
+    {
+      date: 'May - August 2025',
+      title: 'Citizens Bank & College Raptor Internship',
+      description: [
+        '●	Created a Mobile Application from scratch for high school students to analyze, manage, and decide which University is best for them',
+        '●	Developed native Android and iOS apps using Java (Android Studio) and Swift (XCode), connecting via REST APIs',
+        '●	Implemented backend services with ASP.NET (Visual Studio) and managed data storage using MySQL databases',
+        ],
+      expanded: false,
+      image: CB,
+      image1: CR,
     },
     {
       date: 'June - August 2024',
-      title: 'M&T Bank Technology Internship',
+      title: 'M&T Technology Internship',
       description: [
         '●	Replaced an obsolete SAS tool to calculate monthly estimated credit losses for the bank using <b>Python</b> and <b>SQL</b> scripts',
         '●	Used a variety of libraries such as <b>Pandas</b> and <b>PYODBC</b> to simulate a hierarchical structure and preserve replicability on similar services',
@@ -26,6 +41,7 @@ const Timeline = () => {
         ],
       expanded: false,
       image: MT,
+      image1: null,
     },
   ]);
 
@@ -66,7 +82,8 @@ const Timeline = () => {
                   </div>
                   <div className="date">{event.date}</div>
                   <br/>
-                  <img src={event.image} alt = "coe" />
+                  <img src={event.image} alt="company logo" />
+                  {event.image1 && <img src={event.image1} alt="company logo" />}
                 </>
               )}
             </div>
