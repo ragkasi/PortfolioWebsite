@@ -4,7 +4,7 @@ import './SubwaySurfersButton.scss';
 const SubwaySurfersButton = ({ onClick }) => {
   return (
     <button className="subway-surfers-button" onClick={onClick}>
-      🏃‍♂️
+      🏄‍♂️
     </button>
   );
 };
