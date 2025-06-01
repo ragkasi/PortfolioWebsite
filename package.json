@@ -52,5 +52,10 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.5"
+  },
+  "overrides": {
+    "react-speech-kit": {
+      "react": "^18.2.0"
+    }
   }
 }
