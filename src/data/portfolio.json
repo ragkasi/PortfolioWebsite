@@ -7,22 +7,28 @@
             "url": "https://github.com/ragkasi/BreatheSafe"
         },
         {
+            "cover": "/portfolio/fake-news-detector.jpg", 
+            "title": "Enhanced Fake News Detector", 
+            "description": "Python, Hugging Face, Pandas", 
+            "url": "https://fakenewsdetector-ragkasi.streamlit.app/"
+        },
+        {
             "cover": "/portfolio/inboxer.jpg", 
             "title": "Inboxer Extension", 
             "description": "React, JavaScript, Webpack", 
             "url": "https://github.com/ragkasi/inboxer"
         },
         {
-            "cover": "/portfolio/StockMarketPredictor.jpg", 
-            "title": "Stock Market Predictor", 
-            "description": "Python, Sci-kit Learn, Pandas", 
-            "url": "https://github.com/ragkasi/StockPredictor"
-        },
-        {
             "cover": "/portfolio/discord.jpg", 
             "title": "Discord Web Scraper Bot", 
             "description": "Python, Flask, Beautiful Soup", 
             "url": "https://github.com/ragkasi/DiscordBot"
+        },
+        {
+            "cover": "/portfolio/StockMarketPredictor.jpg", 
+            "title": "Stock Market Predictor", 
+            "description": "Python, Sci-kit Learn, Pandas", 
+            "url": "https://github.com/ragkasi/StockPredictor"
         },
         {
             "cover": "/portfolio/calculator.png", 
