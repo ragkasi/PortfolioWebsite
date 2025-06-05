@@ -10,7 +10,7 @@
             "cover": "/portfolio/fake-news-detector.jpg", 
             "title": "Enhanced Fake News Detector", 
             "description": "Python, Hugging Face, Pandas", 
-            "url": "https://fakenewsdetector-ragkasi.streamlit.app/"
+            "url": "https://huggingface.co/spaces/ragkasi/FakeNewsDetector"
         },
         {
             "cover": "/portfolio/inboxer.jpg", 
