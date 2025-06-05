@@ -44,7 +44,7 @@ const Home = () => {
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={12} />
                 <span className = {`${letterClass} _9`}>. </span>
                 </h1>
-                <h2>Computer Science & Engineering, 2026 at The Ohio State University</h2>
+                <h2>Computer Science & Engineering at The Ohio State University</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
             <Logo className="Home"/>
