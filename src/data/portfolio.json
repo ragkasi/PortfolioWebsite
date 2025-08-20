@@ -1,6 +1,12 @@
 {
     "portfolio": [
         {
+            "cover": "/portfolio/Symphonic_Pioneers_Logo_Transparent.png", 
+            "title": "SymphoniConnect", 
+            "description": "TypeScript, React, Node.js, Vite, Tailwind CSS, Supabase", 
+            "url": "https://www.symphoniconnect.com"
+        },
+        {
             "cover": "/portfolio/BreatheSafe.jpg", 
             "title": "BreatheSafe Locker System", 
             "description": "Java, Spring Boot, MySQL, Docker, Ngrok", 
