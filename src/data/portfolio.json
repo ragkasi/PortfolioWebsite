@@ -7,16 +7,22 @@
             "url": "https://www.symphoniconnect.com"
         },
         {
+            "cover": "/portfolio/fake-news-detector.jpg", 
+            "title": "Enhanced Fake News Detector", 
+            "description": "Python, Hugging Face, Pandas", 
+            "url": "https://huggingface.co/spaces/ragkasi/FakeNewsDetector"
+        },
+        {
             "cover": "/portfolio/BreatheSafe.jpg", 
             "title": "BreatheSafe Locker System", 
             "description": "Java, Spring Boot, MySQL, Docker, Ngrok", 
             "url": "https://github.com/ragkasi/BreatheSafe"
         },
         {
-            "cover": "/portfolio/fake-news-detector.jpg", 
-            "title": "Enhanced Fake News Detector", 
-            "description": "Python, Hugging Face, Pandas", 
-            "url": "https://huggingface.co/spaces/ragkasi/FakeNewsDetector"
+            "cover": "/portfolio/climate-change.png", 
+            "title": "Climate Risk Platform", 
+            "description": "PyTorch, FastAPI, Next.js, PostgreSQL + PostGIS, Docker", 
+            "url": "https://github.com/ragkasi/climate-risk-platform"
         },
         {
             "cover": "/portfolio/inboxer.jpg", 
