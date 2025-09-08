@@ -3,7 +3,8 @@ import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
-import Logo from './Logo';
+import ResumeViewer from './ResumeViewer';
+import LogoE from '../../assets/images/R.png';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -47,7 +48,10 @@ const Home = () => {
                 <h2>Computer Science & Engineering at The Ohio State University</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <Logo className="Home"/>
+            <div className="r-logo-container">
+                <img src={LogoE} alt="R Logo" className="r-logo" />
+            </div>
+            <ResumeViewer />
         </div>
         <Loader type="pacman" />
       </>

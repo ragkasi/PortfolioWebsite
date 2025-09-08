@@ -1,0 +1,137 @@
+.resume-viewer-container {
+  z-index: 0;
+  width: 700px;
+  height: 850px;
+  opacity: 1;
+  position: absolute;
+  top: 45%;
+  right: 8%;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+  animation: fadeIn 2s ease-in-out;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  .resume-header {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    h3 {
+      color: #ffd700;
+      font-family: "Coolvetica";
+      font-size: 18px;
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+
+  .pdf-container {
+    height: calc(100% - 120px);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+
+    .loading, .error {
+      color: #ade8f4;
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+    }
+
+    .error {
+      color: #ff6b6b;
+    }
+
+    .pdf-page {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+  }
+
+  .pdf-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    .nav-button {
+      background: transparent;
+      border: 1px solid #ffd700;
+      color: #ffd700;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.3s ease;
+
+      &:hover:not(:disabled) {
+        background: #ffd700;
+        color: #333;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+
+    .page-info {
+      color: #ade8f4;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .resume-viewer-container {
+    width: 600px;
+    height: 750px;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .resume-viewer-container {
+    width: 500px;
+    height: 650px;
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .resume-viewer-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    height: 750px;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+    transform: none;
+  }
+}
