@@ -10,15 +10,27 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 const ResumeViewer = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
 
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen);
+  };
+
   return (
-    <div className="resume-viewer-container">
+    <div className={`resume-viewer-container ${isFullscreen ? 'fullscreen' : ''}`}>
       <div className="resume-header">
         <h3>My Resume</h3>
+        <button 
+          className="fullscreen-btn" 
+          onClick={toggleFullscreen}
+          aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+        >
+          {isFullscreen ? 'Exit' : 'Fullscreen'}
+        </button>
       </div>
       <div className="pdf-container">
         <Document

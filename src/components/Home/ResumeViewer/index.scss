@@ -6,7 +6,7 @@
   position: absolute;
   top: 45%;
   right: 8%;
-  bottom: 5%;
+  bottom: 8%;
   left: auto;
   transform: translateY(-50%);
   animation: fadeIn 2s ease-in-out;
@@ -20,6 +20,7 @@
     text-align: center;
     padding: 15px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
 
     h3 {
       color: #ffd700;
@@ -27,6 +28,10 @@
       font-size: 18px;
       margin: 0;
       font-weight: 400;
+    }
+
+    .fullscreen-btn {
+      display: none; // Hidden by default, shown only on mobile
     }
   }
 
@@ -93,6 +98,24 @@
       font-weight: 500;
     }
   }
+
+  &.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    margin: 0;
+    transform: none;
+    border-radius: 0;
+
+    .pdf-container {
+      height: calc(100vh - 120px);
+    }
+  }
 }
 
 @keyframes fadeIn {
@@ -127,11 +150,35 @@
     position: relative;
     width: 90%;
     max-width: 600px;
-    height: 750px;
+    height: 650px; // Reduced height for better mobile experience
     top: 50px;
     right: 0;
     left: 0;
     margin: 20px auto;
     transform: none;
+    bottom: auto; // Remove bottom constraint on mobile
+
+    .resume-header {
+      .fullscreen-btn {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #ffd700;
+        color: #333;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #ffeb3b;
+        }
+      }
+    }
   }
 }
