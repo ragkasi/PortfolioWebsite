@@ -32,7 +32,7 @@
       opacity: 0;
     }
   
-    @for $i from 1 through 10 {
+    @for $i from 1 through 12 {
       .image-box:nth-child(#{$i}) {
         animation-delay: #{$i}s;
       }

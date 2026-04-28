@@ -1,7 +1,13 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/Symphonic_Pioneers_Logo_Transparent.png", 
+            "cover": "/portfolio/grant.png",
+            "title": "GrantPilot: AI Grant Readiness Assistant",
+            "description": "FastAPI, Next.js, Claude API, RAG, Postgres, MCP, Playwright",
+            "url": "https://grantpilot.click"
+        },
+        {
+            "cover": "/portfolio/Symphonic_Pioneers_Logo_Transparent.png",
             "title": "SymphoniConnect", 
             "description": "TypeScript, React, Node.js, Vite, Tailwind CSS, Supabase", 
             "url": "https://www.symphoniconnect.com"
