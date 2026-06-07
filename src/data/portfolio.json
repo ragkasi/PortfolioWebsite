@@ -1,9 +1,15 @@
 {
     "portfolio": [
         {
+            "cover": "/portfolio/aro.svg",
+            "title": "Aro: Intent-Based Social Discovery App",
+            "description": "React Native, Expo, Supabase, Deno Edge Functions, EAS",
+            "url": "https://aro-9066bce22-raghav-kasibhatlas-projects.vercel.app/"
+        },
+        {
             "cover": "/portfolio/grant.png",
             "title": "GrantPilot: AI Grant Readiness Assistant",
-            "description": "FastAPI, Next.js, Claude API, RAG, Postgres, MCP, Playwright",
+            "description": "FastAPI, Claude API, RAG, Postgres, MCP, Playwright",
             "url": "https://grantpilot.click"
         },
         {

@@ -38,6 +38,7 @@
         .content {
             position: absolute;
             width: 100%;
+            box-sizing: border-box;
             z-index: 3;
             padding: 10px 20px;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -63,6 +64,8 @@
             margin-bottom: 5px;
             color: #fff;
             font-weight: 700;
+            white-space: normal;
+            word-wrap: break-word;
         }
 
         .btn {
